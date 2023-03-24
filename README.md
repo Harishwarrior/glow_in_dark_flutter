@@ -1,16 +1,14 @@
-# glow_in_dark_flutter
+# Glow In Dark Flutter
 
-A new Flutter project.
+### Preview:
 
-## Getting Started
+&nbsp;
 
-This project is a starting point for a Flutter application.
+### Inspiration:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here’s a ‘glow-in-the-dark’ effect achieved by reading the device’s ambient light sensor and partially dimming the UI 💡 <a href="https://t.co/8nJjAwdm7p">pic.twitter.com/8nJjAwdm7p</a></p>&mdash; Alex Widua (@alexwidua) <a href="https://twitter.com/alexwidua/status/1637872113338970112?ref_src=twsrc%5Etfw">March 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ 
 
-A few resources to get you started if this is your first Flutter project:
+&nbsp;
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Requirements
+- Flutter 3.7.8
