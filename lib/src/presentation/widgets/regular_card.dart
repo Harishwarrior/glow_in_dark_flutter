@@ -20,7 +20,7 @@ class RegularCard extends StatelessWidget {
       padding: const EdgeInsets.all(24.0),
       alignment: Alignment.topLeft,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(25.0),
         color: color,
       ),
       child: AnimatedDefaultTextStyle(

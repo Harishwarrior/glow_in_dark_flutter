@@ -20,7 +20,7 @@ class FluorescentCard extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.3,
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(25.0),
         boxShadow: [
           BoxShadow(
             spreadRadius: (40 - (value.roundToDouble() / 5)).clamp(0, 500),
