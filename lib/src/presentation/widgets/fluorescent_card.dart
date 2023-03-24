@@ -34,7 +34,7 @@ class FluorescentCard extends StatelessWidget {
         duration: animationDuration,
         style: TextStyle(
           color: Colors.white,
-          fontSize: 20.0,
+          fontSize: 25.0,
           shadows: <Shadow>[
             Shadow(
               blurRadius: (30 - (value / 7)).clamp(0, 20),

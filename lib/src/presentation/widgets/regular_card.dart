@@ -16,7 +16,7 @@ class RegularCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: animationDuration,
-      height: MediaQuery.of(context).size.height * 0.3,
+      height: MediaQuery.of(context).size.height * 0.28,
       padding: const EdgeInsets.all(24.0),
       alignment: Alignment.topLeft,
       decoration: BoxDecoration(
@@ -29,7 +29,7 @@ class RegularCard extends StatelessWidget {
           color: Colors.white.withOpacity(
             (value / 100).clamp(0.3, 0.9),
           ),
-          fontSize: 20.0,
+          fontSize: 25.0,
         ),
         child: const Text(
           'Regular',
