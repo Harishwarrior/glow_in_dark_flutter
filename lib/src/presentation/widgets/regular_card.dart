@@ -1,15 +1,24 @@
 import 'package:flutter/material.dart';
 
+/// A widget that displays a card with text at the top left corner. The text and
+/// the background color of the card can be animated using [animationValue].
 class RegularCard extends StatelessWidget {
+  /// Creates a [RegularCard] with the required [animationValue],
+  /// [animationDuration], and [color]. An optional [key] can also be provided.
   const RegularCard({
-    super.key,
-    required this.value,
+    required this.animationValue,
     required this.animationDuration,
     required this.color,
+    super.key,
   });
 
-  final int value;
+  /// The value that will be used for the animation.
+  final int animationValue;
+
+  /// The duration of the animation.
   final Duration animationDuration;
+
+  /// The color of the [RegularCard].
   final Color color;
 
   @override
@@ -17,19 +26,21 @@ class RegularCard extends StatelessWidget {
     return AnimatedContainer(
       duration: animationDuration,
       height: MediaQuery.of(context).size.height * 0.28,
-      padding: const EdgeInsets.all(24.0),
+      padding: const EdgeInsets.all(24),
       alignment: Alignment.topLeft,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(25.0),
+        borderRadius: BorderRadius.circular(25),
         color: color,
       ),
       child: AnimatedDefaultTextStyle(
         duration: animationDuration,
         style: TextStyle(
+          // Configures a color for the text that depends on the
+          // animation value.
           color: Colors.white.withOpacity(
-            (value / 100).clamp(0.3, 0.9),
+            (animationValue / 100).clamp(0.3, 0.9),
           ),
-          fontSize: 25.0,
+          fontSize: 25,
         ),
         child: const Text(
           'Regular',
