@@ -13,11 +13,6 @@ Check out a preview of the Glow In Dark Flutter animation in action:
 
 https://user-images.githubusercontent.com/38380040/227494283-6cb0a708-ea79-419c-a142-406e5029c7c6.mp4
 
-### Features:
-- Create an eye-catching "glow-in-the-dark" effect on your Flutter app.
-- Easily read the device's ambient light sensor to trigger the effect.
-- Customize the intensity and color of the glow to fit your app's aesthetic.
-
 ### Getting Started:
 To get started with Glow In Dark Flutter, you will need Flutter version 3.7.8 installed. You can download the latest version of Flutter from the official Flutter website.
 
