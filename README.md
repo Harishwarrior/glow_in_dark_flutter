@@ -1,5 +1,7 @@
 # Glow In Dark Flutter
 
+[![HitCount](https://hits.dwyl.com/Harishwarrior/glow_in_dark_flutter.svg?style=flat-square)](http://hits.dwyl.com/Harishwarrior/glow_in_dark_flutter)
+
 An experiment with Flutter💙 animations
 
 ### Preview:
