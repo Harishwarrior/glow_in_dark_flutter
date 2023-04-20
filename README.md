@@ -1,7 +1,7 @@
 # Glow In Dark Flutter 🌟
 
 [![HitCount](https://hits.dwyl.com/Harishwarrior/glow_in_dark_flutter.svg?style=flat-square)](http://hits.dwyl.com/Harishwarrior/glow_in_dark_flutter)
-[![Flutter Version](https://img.shields.io/badge/flutter-3.7.8-blue.svg)](https://flutter.dev/)
+[![Flutter Version](https://img.shields.io/badge/flutter-3.7.12-blue.svg)](https://flutter.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/Harishwarrior/glow_in_dark_flutter/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Harishwarrior/glow_in_dark_flutter)](https://github.com/Harishwarrior/glow_in_dark_flutter/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/Harishwarrior/glow_in_dark_flutter)](https://github.com/Harishwarrior/glow_in_dark_flutter/network/members)
