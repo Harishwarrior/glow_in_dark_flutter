@@ -1,0 +1,43 @@
+on:
+  push:
+    branches:
+      - stable
+  workflow_dispatch:
+
+name: Build and Release Apps
+jobs:
+  build:
+    name: Build Apps
+    runs-on: macos-latest
+    steps:
+      - name: Export Release Timestamp
+        run: echo "APP_VERSION=release_$(date +'%Y-%m-%d_%H-%m-%S')" >> $GITHUB_ENV
+      - name: Checkout repository
+        uses: actions/checkout@v2.3.4
+      - name: Set up Java
+        uses: actions/setup-java@v2.0.0
+        with:
+          distribution: 'adopt'
+          java-version: "12.x"
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v1.5.3
+        with:
+          channel: "stable"
+      - name: Upgrade Flutter
+        run: flutter upgrade
+      - name: Install pub Dependencies
+        run: flutter pub get
+      - name: Build Android Release App
+        run: flutter build apk --split-per-abi
+      - name: Build Android Debug App
+        run: flutter build apk --debug --split-per-abi
+      - name: Release Apps
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.APP_VERSION }}
+          name: ${{ env.APP_VERSION }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: |
+            build/app/outputs/apk/release/*.apk
+            build/app/outputs/apk/debug/*.apk
+          
